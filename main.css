@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "BerkeleyMono";
+    src: url("assets/fonts/BerkeleyMonoVariable-Regular.ttf");
+  }
+  html {
+    font-family: "BerkeleyMono", sans-serif;
+    scroll-behavior: smooth;
+    background-color: #fff;
+    color: #1a1a1b;
+    font-size:14px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+}
+
+.main {
+  max-width: 576px !important;
+  margin: 0 auto !important;
+  float: none !important;
+  overflow-x: hidden;
+}
+
+.hover:hover {
+  cursor: pointer;
+}
